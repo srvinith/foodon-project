@@ -1,0 +1,784 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plans.css' %}">
+    <!-- bootstrap-css -->
+    <!-- fontawesome start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- fontawesome end -->
+    <!-- carousel slider css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- carousel slider css -->
+    <!-- animation start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- animation end -->
+
+
+    <title>FoodOn</title>
+</head>
+
+<body>
+    <div class="desktop-home">
+        <div class="home">
+            <!-- nav-start -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/"><img src="{% static 'images/logofoodon.png' %}" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/menus">Menus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/plans">Plans</a>
+                            </li>
+                        </ul>
+                        <div class="icon navbar-mr">
+                            <ul class="d-flex align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/login"><img
+                                            src="{% static 'images/new-images/usee.svg' %}" alt="user"
+                                            class="soc-icon"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/cart"><img src="{% static 'images/new-images/cart.svg' %}"
+                                            alt="user" class="soc-icon"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- nav-end -->
+            <div class="bg-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="main-bg">
+                            <div class="col-md-5">
+                                <div class="top">
+                                    <h2 class="titl"> <span class="text-bg">Home</span> cooked <br>
+                                        Fresh Food</h2>
+                                    <span class="yellow-shape"><img
+                                            src="{% static 'images/new-images/yellow-shape.png' %}" alt="user"></span>
+                                    <p class="main-text">
+                                        with a motherly feeling always tastes better
+                                        than outside food .We are committed to
+                                        deliver good food in a neat and insulated pack
+                                        at your doorstep.
+                                    </p> <br><br>
+                                </div>
+                                <div class="btn-style" onclick="loaction.href='/register'">
+                                    <span onclick="location.href='/register'">Subscribe</span>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-6">
+                                <div id="carousel-slider">
+                                    <div>
+                                        <img src="{% static 'images/new-images/big-img-1.png' %}" alt="big">
+                                    </div>
+                                    <div>
+                                        <img src="{% static 'images/new-images/big-img-2.png' %}" alt="big">
+                                    </div>
+                                    <div>
+                                        <img src="{% static 'images/new-images/big-img-1.png' %}" alt="big">
+                                    </div>
+                                    <div>
+                                        <img src="{% static 'images/new-images/big-img-2.png' %}" alt="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- mob-home start -->
+        <div class="mob-content">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/"><img src="{% static 'images/logofoodon.png' %}" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/menus">Menus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/plans">Plans</a>
+                            </li>
+                        </ul>
+                        <div class="icon navbar-mr">
+                            <ul class="d-flex align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="{% static 'images/new-images/usee.svg' %}"
+                                            alt="user" class="soc-icon"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="{% static 'images/new-images/cart.svg' %}"
+                                            alt="user" class="soc-icon"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="mob-bg">
+                <div class="top">
+                    <h2 class="titl"> <span class="text-bg">Home</span> cooked <br>
+                        Fresh Food</h2>
+                    <span class="yellow-shape"><img src="{% static 'images/new-images/yellow-shape.png' %}"
+                            alt="user"></span>
+                    <p class="main-text">
+                        with a motherly feeling always tastes better
+                        than outside food .We are committed to
+                        deliver good food in a neat and insulated pack
+                        at your doorstep.
+                    </p> <br><br>
+                </div>
+                <div class="btn-style" onclick="loaction.href='/register'">
+                    <span onclick="location.href='/register'">Subscribe</span>
+                </div>
+            </div>
+        </div>
+        <!-- mob-home end -->
+
+        <!-- main content start -->
+        <div class="main-content">
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-sm-block col-md-6"></div>
+                    <div class="col-sm-block col-md-6">
+                        <h2 class="sect"> Homely <br>
+                            Best <span class="text-bg">Foods</span></h2>
+                        <p class="main-text mt-3">We are strong believers in the importance of
+                            home-style food. Do you remember coming
+                            back from school to the aroma of fresh dal
+                            home-like comfort and taste in your food.
+                            So all you miss is mom herself and not her cooking!
+                        </p>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- main content end -->
+
+        <!-- how it's works -->
+        <div class="how-its-works">
+            <div class="container">
+                <section id="howits-works">
+                    <div class="how-its-work-first-container">
+                        <div class="row  reveal fade-left" data-wow-delay="0.1s">
+                            <h2 class="section-title">How It <span class="text-bg"> Works.</span></h2>
+                            <div class="col-md-6">
+
+                                <img src="{% static 'images/new-images/cooking.svg' %}" alt="cooking" class="cook">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="part-2 ">
+                                    <div class="numbers">01</div>
+                                    <h2>Fresh and Healthy Homemade food</h2>
+                                    <p>Is often made with fresh ingredients and without the use of
+                                        preservatives, additives, or artificial flavors, providing
+                                    </p>
+                                    <span class="arrows"><img src="{% static 'images/new-images/arrow.svg' %}"
+                                            alt="arrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row reveal fade-right" data-wow-delay="0.1s">
+                            <div class="col-md-6">
+                                <div class="part-2 ">
+                                    <div class="numbers">02</div>
+                                    <h2 class="mt--3">Fresh and Healthy Homemade food</h2>
+                                    <p>Is often made with fresh ingredients and without the use of
+                                        preservatives, additives, or artificial flavors, providing
+                                    </p>
+                                    <span class="arrows"><img src="{% static 'images/new-images/arrow-right.svg' %}"
+                                            alt="arrow"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="{% static 'images/new-images/packing.svg' %}" alt="cooking" class="cook">
+                            </div>
+                        </div>
+                        <div class="row  reveal fade-left" data-wow-delay="0.1s">
+
+                            <div class="col-md-6">
+                                <img src="{% static 'images/new-images/deliver.svg' %}" alt="cooking" class="cook">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="part-2 ">
+                                    <div class="numbers">03</div>
+                                    <h2>Fresh and Healthy Homemade food</h2>
+                                    <p>Is often made with fresh ingredients and without the use of
+                                        preservatives, additives, or artificial flavors, providing
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <!-- how it's works end -->
+        <!-- how it's works mob start -->
+        <div class="mob-works">
+            <div class="container-fluid">
+                <h2 class="section-title">How It <span class="text-bg"> Works.</span></h2>
+                <div class="row  reveal fade-left" data-wow-delay="0.1s">
+                    <div class="sdk">
+                        <div class="mob-img">
+                            <img src="{% static 'images/new-images/cooking.svg' %}" alt="cooking" class="cook">
+                        </div>
+                        <div class="part-2 ">
+                            <div class="numbers">01</div>
+                            <h2>Fresh and Healthy Homemade food</h2>
+                            <p>Is often made with fresh ingredients and without the use of
+                                preservatives, additives, or artificial flavors, providing
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row  reveal fade-left" data-wow-delay="0.1s">
+                    <div class="sdk">
+                        <div class="part-2 ">
+                            <div class="numbers">02</div>
+                            <h2>Fresh and Healthy Homemade food</h2>
+                            <p>Is often made with fresh ingredients and without the use of
+                                preservatives, additives, or artificial flavors, providing
+                            </p>
+                        </div>
+                        <div class="mob-img">
+                            <img src="{% static 'images/new-images//packing.svg' %}" alt="cooking" class="cook">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row  reveal fade-left" data-wow-delay="0.1s">
+                    <div class="sdk">
+                        <div class="mob-img">
+                            <img src="{% static 'images/new-images/deliver.svg' %}" alt="cooking" class="cook">
+                        </div>
+                        <div class="part-2 ">
+                            <div class="numbers">03</div>
+                            <h2>Fresh and Healthy Homemade food</h2>
+                            <p>Is often made with fresh ingredients and without the use of
+                                preservatives, additives, or artificial flavors, providing
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- how it's works mob end -->
+
+        <!-- benifits -->
+        <div class="benefits">
+            <section id="benefits">
+                <div class="container">
+                    <h2 class="section-title mob-sec-titl animate__animated animate__bounce py-4">Why choose <span
+                            class="text-bg">Food on ?</span> <br>
+                        <span class="fs-4 reveal fade-right text-d" data-wow-delay="0.1s">And Our Benefits</span>
+                    </h2>
+                    <div class="row benefits-change">
+                        <!-- <div class="col-1"></div> -->
+                        <div class="col-12">
+                            <div class="row">
+                                <div class=" col-md-2">
+                                    <div class="circl">
+                                        <div class="ones">
+                                            <img src="{% static 'images/new-images/home-cooker.svg' %}" alt="homecooker"
+                                                class="img-one">
+                                            <h6>Home Cooked Meal</h6>
+                                            <p>
+                                                <span> Get authentic home cooked
+                                                    meal at your doorstep.
+                                                </span>
+                                            </p>
+
+                                        </div>
+                                        <div class="ones">
+                                            <img src="{% static 'images/new-images/unfor.svg' %}" alt="homecooker"
+                                                class="img-one"><br>
+                                            <h6>No Preservatives </h6>
+                                            <p>
+                                                <span> Get authentic home cooked
+                                                    meal at your doorstep.
+                                                </span>
+                                            </p>
+
+                                        </div>
+                                        <div class="ones">
+                                            <img src="{% static 'images/new-images/time.svg' %}" alt="homecooker"
+                                                class="img-one">
+                                            <h6>Get More Free Time</h6>
+                                            <p>
+                                                <span> Spend less time cooking and get
+                                                    more productive time.
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-8">
+                                    <div class="cfg">
+                                        <img src="{% static 'images/new-images/cokd.png' %}" alt="cooker"
+                                            class="packcorner img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="circl2">
+                                        <div class="ones">
+                                            <img src="{% static 'images/new-images/location.svg' %}" alt="homecooker">
+                                            <h6>Home Cooked Meal</h6>
+                                            <p>
+                                                <span> Get authentic home cooked
+                                                    meal at your doorstep.
+                                                </span>
+                                            </p>
+
+                                        </div>
+                                        <div class="ones">
+                                            <img src="{% static 'images/new-images/menu.svg' %}" alt="homecooker"><br>
+                                            <h6>Amazing Menu</h6>
+                                            <p>
+                                                <span> Get authentic home cooked
+                                                    meal at your doorstep.
+                                                </span>
+                                            </p>
+
+                                        </div>
+                                        <div class="ones">
+                                            <img src="{% static 'images/new-images/six-part.svg' %}" alt="homecooker">
+                                            <br>
+                                            <h6>Healthy Food & Life</h6>
+                                            <p>
+                                                <span> Get authentic home cooked
+                                                    meal at your doorstep.
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+
+                    </div>
+                    <div class="row benefits-change-mob">
+                        <div class="sdfg">
+                            <div class="circl">
+                                <div class="ones">
+                                    <img src="{% static 'images/new-images/home-cooker.svg' %}" alt="homecooker"
+                                        class="img-one">
+                                    <h6>Home Cooked Meal</h6>
+                                    <p>
+                                        <span> Get authentic home cooked
+                                            meal at your doorstep.
+                                        </span>
+                                    </p>
+
+                                </div>
+                                <div class="ones">
+                                    <img src="{% static 'images/new-images/unfor.svg' %}" alt="homecooker"
+                                        class="img-one"><br>
+                                    <h6>No Preservatives </h6>
+                                    <p>
+                                        <span> Get authentic home cooked
+                                            meal at your doorstep.
+                                        </span>
+                                    </p>
+
+                                </div>
+                                <div class="ones">
+                                    <img src="{% static 'images/new-images/time.svg' %}" alt="homecooker"
+                                        class="img-one">
+                                    <h6>Get More Free Time</h6>
+                                    <p>
+                                        <span> Spend less time cooking and get
+                                            more productive time.
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cfg">
+                                <img src="{% static 'images/new-images/cokd.png' %}" alt="cooker"
+                                    class="packcorner img-fluid">
+                            </div>
+                            <div class="circl2">
+                                <div class="ones">
+                                    <img src="{% static 'images/new-images/location.svg' %}" alt="homecooker">
+                                    <h6>Home Cooked Meal</h6>
+                                    <p>
+                                        <span> Get authentic home cooked
+                                            meal at your doorstep.
+                                        </span>
+                                    </p>
+
+                                </div>
+                                <div class="ones">
+                                    <img src="{% static 'images/new-images/menu.svg' %}" alt="homecooker"><br>
+                                    <h6>Amazing Menu</h6>
+                                    <p>
+                                        <span> Get authentic home cooked
+                                            meal at your doorstep.
+                                        </span>
+                                    </p>
+
+                                </div>
+                                <div class="ones">
+                                    <img src="{% static 'images/new-images/six-part.svg' %}" alt="homecooker">
+                                    <br>
+                                    <h6>Healthy Food & Life</h6>
+                                    <p>
+                                        <span> Get authentic home cooked
+                                            meal at your doorstep.
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- menus start -->
+        <div class="menus my-3">
+            <div class="menu-bg"></div>
+            <section id="menu">
+                <div class="container menusd">
+                    <div class="section-texts reveal fade-right " data-wow-delay="0.1s">
+                        <h2>Our Menu</h2>
+                    </div>
+                    <div class="row change-menu">
+                        <div class="col-9">
+                            <div class="row menu-carousel">
+                                <div id="carousel-slider1">
+                                    <div class="col mx-2">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/first.png' %}" alt="chappathi"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mx-2">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/second-frames.png' %}"
+                                                    alt="chappathi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mx-2">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/second-frames.png' %}"
+                                                    alt="chappathi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mx-2">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/second-frames.png' %}"
+                                                    alt="chappathi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mx-2">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/second-frames.png' %}"
+                                                    alt="chappathi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mx-2">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/second-frames.png' %}"
+                                                    alt="chappathi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mx-2">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/second-frames.png' %}"
+                                                    alt="chappathi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mx-2">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/second-frames.png' %}"
+                                                    alt="chappathi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mob-menu-carousel">
+                                <div id="carousel-slider2">
+                                    <div class="cardsd">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/first.png' %}" alt="chappathi"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cardsd">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/second-frames.png' %}"
+                                                    alt="chappathi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cardsd">
+                                        <div class="mcard ">
+                                            <div class="card-img card-img-top">
+                                                <img src="{% static 'images/new-images/second-frames.png' %}"
+                                                    alt="chappathi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 reveal fade-left " data-wow-delay="0.1s">
+                            <div class="right-content">
+                                <h2>Our bestsellers</h2>
+                                <p class="fs-5">Thinking of ghar jaisi dal? Or masala bhindi? Dreaming of chicken
+                                    gravies and luscious paneer lababdar? Look no further.</p>
+                                <div class="btn-style" style="margin-left: 0px;" onclick="loaction.href='/menus'">
+                                    <span onclick="location.href='/menus'" class="text-dark">Expoler Our Menu <img
+                                            src="{% static 'images/new-images/right-arrow.svg' %}" alt="right"
+                                            class="arrow-right">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- menus end -->
+
+        <!-- apps start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="app-bg">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="app-texts">
+                                    <h2>Download Now</h2>
+                                    <p>Are you ready to take your love for cooking to the next level?
+                                        Download the Food on Chef app today and experience the
+                                        convenience of having everything you need to start your
+                                        Download our App in
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href=""> <img src="{% static 'images/new-images/playstore.png' %}"
+                                            alt="playstore" class="playstore-img"></a>
+                                    <a href=""> <img src="{% static 'images/new-images/app-store.png' %}"
+                                            alt="playstore" class="playstore"></a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="{% static 'images/new-images/fdbg.png' %}" alt="mobile"
+                                    class="mob  reveal fade-bottom " data-wow-delay="0.1s">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <!-- apps end -->
+        <!-- footer start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="{% static 'images/new-images/foodonlogos.png' %}" alt="logo">
+                    </div>
+                    <div class="col">
+                        <div class="foot-list">
+                            <h6>Quick Links</h6>
+                            <ul class="foot-link">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/menus">Menu</a></li>
+                                <li><a href="">Plans</a></li>
+                                <li><a href="">Cart</a></li>
+                                <li><a href="">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="foot-list">
+                            <h6>Contact us</h6>
+                            <ul class="foot-link">
+                                <li><a href="#">Terms and conditions </a></li>
+                                <li><a href="#">Support@foodon.in</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="foot-list">
+                            <h6>Subscribe</h6>
+                            <ul class="foot-link">
+                                <li>
+                                    Receive the latest offers and
+                                    <br>notifications via email
+
+                                </li>
+                                <form action="" class="footer-form">
+                                    <input type="text" name="" id="" placeholder="Enter Email">
+                                    <button type="submit" class="btn-style mt-3">
+                                        <span>Submit</span>
+                                    </button>
+                                </form>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white">
+                <p class="text-white text-center">© 2023 foodon. All Rights Reserved</p>
+
+            </div>
+            <div class="first-scrl">
+                <img src="{% static 'images/new-images/next-btn.png' %}" alt="dfv" style="transform:rotate(270deg)">
+            </div>
+        </footer>
+        <!-- footer end -->
+        <!-- first-scr start -->
+
+        <!-- first-scr end-->
+    </div>
+
+    <!-- preloder -->
+
+
+    <!-- script start -->
+    <script src="{% static 'js/home.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <!-- script end -->
+
+    <!-- carousel slider script -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- carousel slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+
+    <!-- carousel slider function -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+    <!--  -->
+    <script>
+        $("#carousel-slider").slick({
+            arrows: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            mobileFirst: true
+        });
+    </script>
+    <script>
+        $("#carousel-slider1").slick({
+            arrows: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            mobileFirst: true
+        });
+    </script>
+    <script>
+        $("#carousel-slider2").slick({
+            arrows: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            mobileFirst: true
+        });
+    </script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"></script>
+    <!-- carousel slider function -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+@media screen and (max-width:1000px) {
+    .home {
+        display: none;
+
+    }
+
+    .mob-content {
+        width: 100%;
+        height: auto;
+        padding: 20px 0px;
+        display: block;
+    }
+
+    .main-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mob-works {
+        display: block;
+    }
+
+    .how-its-works {
+        display: none;
+    }
+
+    .mob-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mob-img img {
+        width: 200px;
+    }
+
+    .sdk {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .part-2 {
+        padding: 0px 0px;
+
+    }
+
+    .numbers {
+        font-size: 30px;
+        font-weight: 500;
+        color: #FFE7AA;
+
+    }
+
+    .part-2 h2 {
+        font-size: 17px;
+    }
+
+    .part-2 p {
+        font-size: 10px;
+    }
+
+    .mob-sec-titl {
+        font-size: 23px;
+    }
+
+    .ones img {
+        width: 20px;
+    }
+
+    .ones h6 {
+        font-size: 12px;
+    }
+
+    .ones p span {
+        font-size: 10px;
+
+    }
+
+    .cfg img {
+        width: 400px;
+    }
+
+    .benefits-change-mob {
+        display: block !important;
+    }
+
+    .benefits-change {
+        display: none;
+    }
+
+    .sdfg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menus {
+        height: 100vh;
+    }
+
+    .change-menu {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .menu-carousel {
+        display: none;
+    }
+
+    .mob-menu-carousel {
+        display: block !important;
+    }
+
+    #carousel-slider2 {
+        display: flex;
+
+    }
+    .right-content{
+        float: left !important;
+    }
+    .main-content {
+        background-image: none;
+        background-size: cover;
+        background-position: left;
+        width: 100%;
+        height: 60vh;
+    }
+    .sect{
+        font-size: 20px;
+    }
+    
+
+}

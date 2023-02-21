@@ -1,0 +1,346 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plans.css' %}">
+    <!-- bootstrap-css -->
+    <!-- fontawesome start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- fontawesome end -->
+    <!-- carousel slider css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- carousel slider css -->
+    <!-- animation start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- animation end -->
+
+
+    <title>FoodOn</title>
+</head>
+
+<body>
+    <!-- <div id="login">
+        <div class="login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="hv">
+                            <img src="{% static 'images/new-images/hv.png' %}" alt="" class="hv img-fluid">
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bg-sec">
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+   
+    <div class="desktop-home">
+        <!-- nav-start -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="{% static 'images/logofoodon.png' %}" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/menus">Menus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/plans">Plans</a>
+                        </li>
+                    </ul>
+                    <div class="icon navbar-mr">
+                        <ul class="d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login"><img src="{% static 'images/new-images/usee.svg' %}"
+                                        alt="user" class="soc-icon"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="{% static 'images/new-images/cart.svg' %}"
+                                        alt="user" class="soc-icon"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- nav-end -->
+       
+        <div class="plans">
+            <h2>Our Plans</h2>
+        </div>
+        <div class="plans-container container">
+            <div class="row">
+                <h2 class="plans-t">Menu That Always Makes <br>
+                    You Fall <span class="text-bg"> In Love</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <div class="plan-toggle">
+                        <div class="dogule-btn act-dogule">Normal plan</div>
+                        <div class="dogule-btn">Diet Plan</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col">
+                        <div class="plans-box">
+                            <h4 class="fs-2">₹459</h4>
+                            <p class="plans-textsd">3 Days Trial Plan</p>
+                            <br><br>
+                            <p> <img src="{% static 'images/new-images/cancel.png' %}" alt="cancel" class="cancel">
+                                Cancellation not Available</p>
+                            <p> <img src="{% static 'images/new-images/dick.png' %}" alt="cancel" class="dick">
+                                Cancellation not Available</p><br><br>
+                            <div class=" card-btn" onclick="loaction.href='/register'">
+                                <span onclick="location.href='/login'">Subscribe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plans-box">
+                            <p class="packs"><img src="{% static 'images/new-images/best-pack.png' %}" alt="pack">
+                            </p>
+                            <h4 class="fs-2 mt-3">₹3059</h4>
+                            <p class="plans-textsd">30 Days Trial Plan</p>
+                            <br><br>
+                            <p> <img src="{% static 'images/new-images/dick.png' %}" alt="cancel" class="dick">
+                                Cancellation Available</p>
+                            <p> <img src="{% static 'images/new-images/dick.png' %}" alt="cancel" class="dick">
+                                Cancellation not Available</p><br><br>
+                            <div class=" card-btn" onclick="loaction.href='/register'">
+                                <span onclick="location.href='/login'">Subscribe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plans-box">
+                            <h4 class="fs-2">₹1559</h4>
+                            <p class="plans-textsd">15 Days Trial Plan</p>
+                            <br><br>
+                            <p> <img src="{% static 'images/new-images/dick.png' %}" alt="cancel" class="dick">
+                                Cancellation not Available</p>
+                            <p> <img src="{% static 'images/new-images/dick.png' %}" alt="cancel" class="dick">
+                                Cancellation not Available</p><br><br>
+                            <div class=" card-btn" onclick="loaction.href='/register'">
+                                <span onclick="location.href='/login'">Subscribe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- mob-home start -->
+        <div class="mob-content">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/"><img src="{% static 'images/logofoodon.png' %}" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/menus">Menus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Plans</a>
+                            </li>
+                        </ul>
+                        <div class="icon navbar-mr">
+                            <ul class="d-flex align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="{% static 'images/new-images/usee.svg' %}"
+                                            alt="user" class="soc-icon"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="{% static 'images/new-images/cart.svg' %}"
+                                            alt="user" class="soc-icon"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="mob-bg">
+
+            </div>
+        </div>
+        <!-- mob-home end -->
+
+
+        <!-- footer start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="{% static 'images/new-images/foodonlogos.png' %}" alt="logo">
+                    </div>
+                    <div class="col">
+                        <div class="foot-list">
+                            <h6>Quick Links</h6>
+                            <ul class="foot-link">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/menus">Menu</a></li>
+                                <li><a href="">Plans</a></li>
+                                <li><a href="">Cart</a></li>
+                                <li><a href="">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="foot-list">
+                            <h6>Contact us</h6>
+                            <ul class="foot-link">
+                                <li><a href="#">Terms and conditions </a></li>
+                                <li><a href="#">Support@foodon.in</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="foot-list">
+                            <h6>Subscribe</h6>
+                            <ul class="foot-link">
+                                <li>
+                                    Receive the latest offers and
+                                    <br>notifications via email
+
+                                </li>
+                                <form action="" class="footer-form">
+                                    <input type="text" name="" id="" placeholder="Enter Email">
+                                    <button type="submit" class="btn-style mt-3">
+                                        <span>Submit</span>
+                                    </button>
+                                </form>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white">
+                <p class="text-white text-center">© 2023 foodon. All Rights Reserved</p>
+
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+
+    <!-- preloder -->
+
+
+    <!-- script start -->
+    <script src="{% static 'js/home.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <!-- script end -->
+
+    <!-- carousel slider script -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- carousel slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+
+    <!-- carousel slider function -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+    <!--  -->
+    <script>
+        $("#carousel-slider").slick({
+            arrows: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            mobileFirst: true
+        });
+    </script>
+    <script>
+        $("#carousel-slider1").slick({
+            arrows: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            mobileFirst: true
+        });
+    </script>
+    <script>
+        $("#carousel-slider2").slick({
+            arrows: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            mobileFirst: true
+        });
+    </script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"></script>
+    <!-- carousel slider function -->
+
+
+</body>
+
+</html>
