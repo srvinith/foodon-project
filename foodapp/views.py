@@ -9,5 +9,7 @@ def plans(request):
     return render(request,'plans.html')
 def login(request):
     return render(request,'login.html')
+def cart(request):
+    return render(request,'cart.html')
 def undercooking(request):
     return render(request,'undercooking.html')

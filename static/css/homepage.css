@@ -40,7 +40,8 @@ button:focus {
 .navbar-brand img {
     width: 130px;
 }
-.navbar{
+
+.navbar {
     top: 0;
     left: 0;
     position: fixed;
@@ -86,6 +87,17 @@ button:focus {
     margin-left: 70px;
     cursor: pointer;
     position: relative;
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.bricks{
+    width: 300px;
+    height: 300px;
 }
 
 .top {
@@ -325,7 +337,7 @@ button:focus {
     background-color: #FDF2DE;
     width: 100%;
     height: auto;
-    padding: 46px 0px 
+    padding: 46px 0px
 }
 
 .box-benefits {
@@ -385,7 +397,8 @@ button:focus {
 .menus {
     height: 100vh;
 }
-.menu-bg{
+
+.menu-bg {
     background-image: url(../images/ram.jpg);
     width: 100%;
     height: 45vh;
@@ -442,7 +455,7 @@ button:focus {
 
 .benefits-change {
     display: block;
-   
+
 }
 
 .menu-carousel {
@@ -452,7 +465,8 @@ button:focus {
 .mob-menu-carousel {
     display: none !important;
 }
-.menusd{
+
+.menusd {
     margin: 100px 0px;
 }
 
@@ -498,6 +512,7 @@ button:focus {
     width: 100%;
     height: 100%;
 }
+
 .playstore-img {
     margin-top: -30px;
     width: 221px !important;
@@ -544,10 +559,31 @@ button:focus {
     border: none;
     outline: none;
     padding: 0px 10px;
-    
+
 }
-.footer-form input:focus{
+
+.footer-form input:focus {
     outline: none;
+}
+.cart-home{
+    display: none;
+}
+.under{
+    display: block;
+    width: 100%;
+    height: 100vh;
+  
+}
+.first-crl {
+    z-index: 999;
+    position: relative;
+    position: fixed;
+}
+.first-crl img{
+    width: 30px;
+    height: 30px;
+    background-color: #f7b31c;
+    position: absolute;
 }
 
 /* --footer end */
