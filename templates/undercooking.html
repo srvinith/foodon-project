@@ -1,0 +1,46 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plans.css' %}">
+    <!-- bootstrap-css -->
+    <title>Foodon</title>
+</head>
+<body>
+    <div class="under">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static 'images/new-images/bricks.svg' %}" alt="" class="img-fluid">
+                </div>
+                <div class="col-6">
+                    <img src="{% static 'images/new-images/under.gif' %}" alt="" class="img-fluid w-70 h-70">
+                   <center>
+                    <h2 class="bg-text" style="color:#F7B31C">Website under cooking...</h2>
+                    <p>If you have any urgent inquiries or need assistance, you can try
+    
+                        reaching out to the website's customer support team                   </p>
+                   </center>
+                </div>
+                <div class="col-3">
+                    <img src="{% static 'images/new-images/bricks.svg' %}" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    <!-- script start -->
+    <script src="{% static 'js/home.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.bundle.js'%}"></script>
+    <!-- script end -->
+</body>
+</html>
