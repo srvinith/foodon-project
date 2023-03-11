@@ -13,3 +13,5 @@ def cart(request):
     return render(request,'cart.html')
 def undercooking(request):
     return render(request,'undercooking.html')
+def footer(request):
+    return render(request,'footer.html')
