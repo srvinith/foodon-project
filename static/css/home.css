@@ -26,6 +26,40 @@ body {
   background-position: center;
   background-size: cover;
 }
+.scr-bootom{
+  position: fixed;
+  z-index: 999;
+}
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 1996;
+  background: #57585b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  
+}
+
+.back-to-top img {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #f8c520;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
 
 a {
   text-decoration: none;

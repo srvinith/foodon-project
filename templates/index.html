@@ -114,8 +114,7 @@
                 </div>
             </div>
         </div>
-
-
+       </div>
         <!-- mob-home start -->
         <div class="mob-content">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -187,9 +186,8 @@
                             home-like comfort and taste in your food.
                             So all you miss is mom herself and not her cooking!
                         </p>
-
-
                     </div>
+                    
 
 
 
@@ -698,12 +696,11 @@
         </footer>
         <!-- footer end -->
         <!-- first-scr start -->
-
+      
         <!-- first-scr end-->
     </div>
-    <div class="first-crl">
-        <img src="{% static 'images/new-images/next-btn.png' %}" alt="dfv" style="transform:rotate(270deg)">
-    </div>
+
+    <a href="#" class="back-to-top "><img src="{%static 'images/new-images/next-btn.png' %}" alt="arrow"></img></a>
     <!-- preloder -->
 
 
@@ -742,7 +739,23 @@
 
         window.addEventListener("scroll", reveal);
     </script>
-    <!--  -->
+    <!--back -to-top start -->
+    <script>
+   let backtotop = document.querySelector('back-to-top')
+  if (backtotop) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtotop.classList.add('active')
+      } else {
+        backtotop.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+  }
+    </script>
+    <!--back -to-top end -->
+
     <script>
         $("#carousel-slider").slick({
             arrows: false,
