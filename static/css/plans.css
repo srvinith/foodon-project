@@ -46,8 +46,7 @@
 
 .plans-box:hover {
     box-shadow: 1px 1px 15px #F7B31C;
-    width: 83%;
-    height: 440px;
+    padding: 10px;
 }
 
 .plan-toggle {
