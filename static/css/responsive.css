@@ -138,6 +138,12 @@
     .menu-bg{
         width: 100%;
     }
+    .app-bg{
+        margin-top: 400px;
+    }
+    .app-texts h2{
+        font-size: 20px;
+    }
     
 
 }
