@@ -99,8 +99,8 @@
                     You Fall <span class="text-bg"> In Love</span></h2>
             </div>
             <div class="row">
-                <div class="col-8"></div>
-                <div class="col-4">
+                <div class=" col-md-8"></div>
+                <div class=" col-sm-12 col-md-4">
                     <div class="plan-toggle">
                         <div class="dogule-btn act-dogule">Normal plan</div>
                         <div class="dogule-btn">Diet Plan</div>
@@ -162,95 +162,47 @@
                     </div>
 
                 </div>
-
-
-
             </div>
         </div>
-
-
-
-
-        <!-- mob-home start -->
-        <div class="mob-content">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><img src="{% static 'images/logofoodon.png' %}" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/menus">Menus</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Plans</a>
-                            </li>
-                        </ul>
-                        <div class="icon navbar-mr">
-                            <ul class="d-flex align-items-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><img src="{% static 'images/usee.svg' %}"
-                                            alt="user" class="soc-icon"></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><img src="{% static 'images/cart.svg' %}"
-                                            alt="user" class="soc-icon"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <div class="mob-bg">
-
-            </div>
-        </div>
-        <!-- mob-home end -->
-
 
         <!-- footer start -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <img src="{% static 'images/foodonlogos.png' %}" alt="logo">
+                    <div class="col-sm-12 col-md-2">
+                        <img src="{% static 'images/new-images/foodonlogos.png' %}" alt="logo" class="logo-mob">
                     </div>
-                    <div class="col">
-                        <div class="foot-list" style="text-align: left !important;">
-                            <h6>Quick Links</h6>
+                    <div class="col-sm-6 col-md-2">
+                        <div class="foot-list">        
                             <ul class="foot-link">
+                                <h6>Quick Links</h6>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/menus">Menu</a></li>
-                                <li><a href="">Plans</a></li>
-                                <li><a href="">Cart</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                <li><a href="/plans">Plans</a></li>
+                                <li><a href="/cart">Cart</a></li>
+                                <li><a href="/login">Contact Us</a></li>
+    
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="foot-list" style="text-align: left !important;">
-                            <h6>Contact us</h6>
+                    <div class="col-sm-6 col-md-2">
+                        <div class="foot-list">
                             <ul class="foot-link">
+                                <h6>Contact us</h6>
                                 <li><a href="#">Terms and conditions </a></li>
                                 <li><a href="#">Support@foodon.in</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-2"></div>
+                    <div class="col-sm-12 col-md-4">
                         <div class="foot-list">
-                            <h6>Subscribe</h6>
                             <ul class="foot-link">
+                                <h6>Subscribe</h6>
                                 <li>
                                     Receive the latest offers and
                                     <br>notifications via email
-
+    
                                 </li>
                                 <form action="" class="footer-form">
                                     <input type="text" name="" id="" placeholder="Enter Email">
@@ -264,8 +216,9 @@
                 </div>
                 <hr class="text-white">
                 <p class="text-white text-center">© 2023 foodon. All Rights Reserved</p>
-
+    
             </div>
+    
         </footer>
         <!-- footer end -->
     </div>

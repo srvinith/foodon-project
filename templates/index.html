@@ -627,15 +627,15 @@
                                 </p>
                             </div>
                             <div class="d-flex align-items-center">
-                                <a href=""> <img src="{% static 'images/new-images/playstore.png' %}" alt="playstore"
+                                <a href="" class="mob-app-img mv-img"> <img src="{% static 'images/new-images/playstore.png' %}" alt="playstore"
                                         class="playstore-img"></a>
-                                <a href=""> <img src="{% static 'images/new-images/app-store.png' %}" alt="playstore"
+                                <a href="" class="mob-app-img"> <img src="{% static 'images/new-images/app-store.png' %}" alt="playstore"
                                         class="playstore"></a>
                             </div>
                         </div>
                         <div class="col-4">
                             <img src="{% static 'images/new-images/fdbg.png' %}" alt="mobile"
-                                class="mob  reveal fade-bottom " data-wow-delay="0.1s">
+                                class="mob reveal fade-bottom " data-wow-delay="0.1s">
                         </div>
                     </div>
                 </div>
@@ -648,35 +648,36 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <img src="{% static 'images/new-images/foodonlogos.png' %}" alt="logo">
+                <div class="col-sm-12 col-md-2">
+                    <img src="{% static 'images/new-images/foodonlogos.png' %}" alt="logo" class="logo-mob">
                 </div>
-                <div class="col">
-                    <div class="foot-list">
-                        <h6>Quick Links</h6>
+                <div class="col-sm-6 col-md-2">
+                    <div class="foot-list">        
                         <ul class="foot-link">
+                            <h6>Quick Links</h6>
                             <li><a href="/">Home</a></li>
                             <li><a href="/menus">Menu</a></li>
                             <li><a href="/plans">Plans</a></li>
                             <li><a href="/cart">Cart</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="/login">Contact Us</a></li>
 
                         </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-6 col-md-2">
                     <div class="foot-list">
-                        <h6>Contact us</h6>
                         <ul class="foot-link">
+                            <h6>Contact us</h6>
                             <li><a href="#">Terms and conditions </a></li>
                             <li><a href="#">Support@foodon.in</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2"></div>
+                <div class="col-sm-12 col-md-4">
                     <div class="foot-list">
-                        <h6>Subscribe</h6>
                         <ul class="foot-link">
+                            <h6>Subscribe</h6>
                             <li>
                                 Receive the latest offers and
                                 <br>notifications via email

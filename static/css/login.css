@@ -3,7 +3,7 @@
  box-shadow: 0px 4px 4px rgba(154, 150, 150, 0.25);
  border-radius: 10px;
  width: 100%;
- height: 78vh;
+ height: fit-content;
  background-position: left;
  background-size:700px;
  background-repeat: no-repeat;
@@ -30,13 +30,14 @@
 .inp-box input{
     padding: 10px 20px;
     width: 90%;
-    background: transparent;
+    background: none;
     outline: none;
     border: 0;
   
 }
 .inp-box input:focus{
     outline: none;
+    background-color: none;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

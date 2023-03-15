@@ -471,6 +471,7 @@ button:focus {
     height: 408px;
     margin-bottom: 60px;
     margin-top: 200px;
+    display: block;
     background: #FFE180;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px 0px 40px 40px;
@@ -531,6 +532,7 @@ button:focus {
 
 .foot-list {
     padding: 30px 0px;
+    text-align: left;
 }
 
 .foot-list h6 {
@@ -576,3 +578,41 @@ button:focus {
 }
 
 /* --footer end */
+
+/* media screen start */
+@media screen and (max-width:1000px){
+    .app-bg{
+        margin-top: 400px !important;
+    }
+    .app-texts h2{
+        font-size: 20px !important;
+    }
+    .app-texts p{
+        font-size: 12px !important;
+    }
+    .mob{
+        height: 160px !important;
+        margin-top: 10px;
+    }
+    
+    .mob-app-img img{
+        width: 100px;
+    }
+    .mv-img img{
+        width: 200px;
+    }
+    .logo-mob{
+        display: block;
+    }
+    .footer-form input {
+        width: 305px;
+        height: 63px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding: 0px 10px;
+    
+    }
+}
+/* media screen end */
