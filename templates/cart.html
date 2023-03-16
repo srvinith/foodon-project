@@ -70,12 +70,12 @@
             </div>
         </nav>
         <!-- nav-end -->
-        <div class="cart-page" style="display:block">
-            <div class="cart">
-                <center>
-                    <h1 class="">My Cart</h1>
-                </center>
-            </div>
+        <div class="cart">
+            <center>
+                <h1 class="">My Cart</h1>
+            </center>
+        </div>
+        <div class="cart-page" style="display:block" id="cart-page" >
             <div class="cart-list">
                 <div class="container">
                     <div class="row">
@@ -117,6 +117,10 @@
                                     </span>
                                     <span style="cursor: pointer;"><img src="{% static 'images/new-images/del-icon.svg' %}" alt="del"></span>
                                 </div>
+
+                                <div class="checkout-btn" onclick="paymentPage()">
+                                    <span>Check out</span>
+                                </div>
                                 
                             </div>
                         </div>
@@ -125,12 +129,99 @@
                             <div class="plan-price-box">
                                <div class="plan-frow">
                                 <img src="{% static 'images/new-images/food-diamond.png' %}" alt="food-diamond">
+                                <span class="pric-text">30 Days Food Plan</span><br>
+                                <span class="shadoww">Breakfast Lunch Dinner plan</span>
+                                <div class="tabl-sec">
+                                    <table class="table">
+                                        <tr>
+                                            <td> Name</td>
+                                            <td>Ganesh M</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Valid From </td>
+                                            <td>11.01.2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Valid To </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                   </div>
+                                   <div class="sec-tabl">
+                                    <table class="table">
+                                        <tr class="fg-bg">
+                                            <td>Delivery Charges</td>
+                                            <td>Free delivery</td>
+                                        </tr>
+                                        <tr class="fg-bg">
+                                            <td>Amount to be paid</td>
+                                            <td class="pric-strong"> ₹ 1125</td>
+                                        </tr>
+                                    </table>
+                                   </div>
                                </div>
+                              
                             </div>
                            
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="payment-form" id="payment-form">
+            <div class="form-con">
+               <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <form action="">
+                            <div class="add-shiping me-4">
+                                <h5>Add Shipping Address </h5>
+                                <form action="" method="post">
+                                  <div class="f-inp">
+                                    <div class="f-one">
+                                      <label for="fname">First Name</label><br>
+                                      <input type="text" name="fname" id="fname" placeholder="Ganesh" class="fname">
+                                    </div>
+                                    <div class="f-two">
+                                      <label for="phone">Phone Number</label><br>
+                                      <input type="number" name="phone" id="phone" placeholder="Phone Number" class="phone">
+                                    </div>
+                                  </div>
+                                  <div class="f-inp">
+                                    <div class="f-one">
+                                      <label for="fname">Pin code</label><br>
+                                      <input type="number" name="fname" id="fname" placeholder="623456" class="fname">
+                                    </div>
+                                    <div class="f-two">
+                                      <label for="phone">City / Town</label><br>
+                                      <input type="number" name="phone" id="phone" placeholder="Pollachi" class="phone">
+                                    </div>
+                                  </div>
+                                  <div class="address">
+                                    <label for="address">Address</label><br>
+                                    <input type="text" placeholder="Address" name="address" id="address">
+                                  </div>
+                                  <div class="date">
+                                    <div class="from-date">
+                                      <div class="dates"><label for="frdate">Plan Date from</label></div>
+                                      <div><input type="date" name="frdate" id="frdate" placeholder="jan-12"></div>
+                                    </div>
+                                    <hr>
+                                    <div class="to-date">
+                                      <div class="dates"><label for="todate">Plan Date to</label></div>
+                                      <div><input type="date" name="todate" id="todate"></div>
+                                    </div>
+                                  </div>
+                                  <button class="payment mt-4" onclick="location.href='/payment'">Continue to Payment</button>
+                                </form>
+                              </div>
+                        </form>
+                       
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+               </div>
+            
             </div>
         </div>
         <!-- mob-home start -->
@@ -237,6 +328,17 @@
         }
 
         window.addEventListener("scroll", reveal);
+
+        function paymentPage(e){
+            event.preventDefault();
+         const cartPage = document.getElementById('cart-page');
+         const paymnetForm = document.getElementById('payment-form');
+            if(cartPage.style.display === 'block'){
+                cartPage.style.display = 'none';
+                paymnetForm.style.display='block';
+            }
+            
+        }
     </script>
     <!--  -->
     <script>
