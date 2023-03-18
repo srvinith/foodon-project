@@ -1,233 +1,233 @@
 .cart {
-    background-image: url(../images/adf.jpg);
-    height: 45vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(../images/adf.jpg);
+  height: 45vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cart h1 {
-    font-family: 'Rancho', cursive;
-    font-size: 80px;
-    padding-top: 30px;
+  font-family: 'Rancho', cursive;
+  font-size: 80px;
+  padding-top: 30px;
 }
 
 .cart-payment {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .cart-box {
-    width: 100%;
-    height: 88px;
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(174, 171, 171, 0.25);
-    border-radius: 10px;
-    margin: 10px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  width: 100%;
+  height: 88px;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(174, 171, 171, 0.25);
+  border-radius: 10px;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .shadow-texts {
-    font-size: 12px;
-    color: #9D9DA0;
+  font-size: 12px;
+  color: #9D9DA0;
 }
 
 .plan-price-box {
-    height: 100vh !important;
-    width: 100%;
-    position: relative;
-    background-image: url(../images/new-images/plan-price-box.png);
-    background-size: 400px;
-    background-repeat: no-repeat;
-    margin-bottom: 20px;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  background-image: url(../images/new-images/plan-price-box.png);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }
 
 .plan-frow {
-    padding: 30px 60px;
+  padding: 30px 60px;
 }
 
 .pric-text {
-    font-weight: 400;
-    font-size: 24px;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .shadoww {
-    color: #8A8585;
-    font-size: 12px;
-    margin-left: 30px;
+  color: #8A8585;
+  font-size: 12px;
+  margin-left: 30px;
 }
 
 .tabl-sec {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .sec-tabl {
-    margin-top: 200px !important;
+  margin-top: 200px !important;
 }
 
 .fg-bg {
-    font-size: 14px !important;
+  font-size: 14px !important;
 
 }
 
 .pric-strong {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .checkout-btn {
-    width: 100%;
-    height: 68px;
-    background: #F7B31C;
-    box-shadow: 0px 4px 4px rgba(154, 150, 150, 0.25), inset 0px 4px 4px #F7B31C;
-    border-radius: 10px;
-    margin-top: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 20px;
-    cursor: pointer;
+  width: 100%;
+  height: 68px;
+  background: #F7B31C;
+  box-shadow: 0px 4px 4px rgba(154, 150, 150, 0.25), inset 0px 4px 4px #F7B31C;
+  border-radius: 10px;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 #payment-form {
-    display: none;
+  display: none;
 }
 
 .form-con {
-    background-image: url(../images/new-images/dg.png);
-    background-size: 330px;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 100%;
-    width: 100%;
+  background-image: url(../images/new-images/dg.png);
+  background-size: 330px;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100%;
+  width: 100%;
 }
 
 /* form-cotainer-start */
 .f-inp {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .f-one {
-    /* background-color: #E8E8E8; */
-    width: 50%;
-    padding: 10px;
-  }
-  
-  .f-one input {
-    width: 100%;
-    padding: 10px;
-    background: transparent;
-    border: 1px solid #ccc;
-    outline: none;
-    border-radius: 5px;
-  }
-  
-  .f-two {
-    width: 50%;
-    padding: 10px;
-    /* background-color: #000; */
-  }
-  
-  .f-two input {
-    width: 100%;
-    padding: 10px;
-    background: transparent;
-    border: 1px solid #ccc;
-    outline: none;
-    border-radius: 5px;
-  }
-  
-  .address {
-    width: 100%;
-    /* background-color: #000; */
-    padding: 10px;
-  }
-  
-  .carts {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .address input,
-  .cartnum {
-    width: 100%;
-    padding: 10px;
-    background: transparent;
-    border: 1px solid #ccc;
-    outline: none;
-    border-radius: 5px;
-  }
-  
-  .cartnum input {
-    width: 90%;
-    border: 0px solid;
-    outline: none;
-    background: transparent;
-    margin: 0px 10px;
-  }
-  
-  .date {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  .from-date {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .to-date {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .dates {
-    padding: 0px 20px;
-  }
-  
-  .from-date input {
-    width: 100%;
-    height: 32px;
-    background: #d9d9d9;
-    box-shadow: 0px 4px 4px rgba(226, 216, 216, 0.25);
-    border-radius: 5px;
-    border: none;
-    outline: none;
-  }
-  
-  .to-date input {
-    width: 100%;
-    height: 32px;
-    background: #d9d9d9;
-    box-shadow: 0px 4px 4px rgba(226, 216, 216, 0.25);
-    border-radius: 5px;
-    border: none;
-    outline: none;
-  }
-  
-  .payment {
-    width: 100%;
-    height: 68px;
-    background: #f7b31c;
-    box-shadow: 0px 4px 4px rgba(154, 150, 150, 0.25), inset 0px 4px 4px #f7b31c;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  /* ---add shiping end */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.f-one {
+  /* background-color: #E8E8E8; */
+  width: 50%;
+  padding: 10px;
+}
+
+.f-one input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.f-two {
+  width: 50%;
+  padding: 10px;
+  /* background-color: #000; */
+}
+
+.f-two input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.address {
+  width: 100%;
+  /* background-color: #000; */
+  padding: 10px;
+}
+
+.carts {
+  width: 100%;
+  padding: 10px;
+}
+
+.address input,
+.cartnum {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.cartnum input {
+  width: 90%;
+  border: 0px solid;
+  outline: none;
+  background: transparent;
+  margin: 0px 10px;
+}
+
+.date {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.from-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.to-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dates {
+  padding: 0px 20px;
+}
+
+.from-date input {
+  width: 100%;
+  height: 32px;
+  /* background: #d9d9d9;
+  box-shadow: 0px 4px 4px rgba(226, 216, 216, 0.25); */
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.to-date input {
+  width: 100%;
+  height: 32px;
+  /* background: #d9d9d9;
+  box-shadow: 0px 4px 4px rgba(226, 216, 216, 0.25); */
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.payment {
+  width: 100%;
+  height: 68px;
+  background: #f7b31c;
+  box-shadow: 0px 4px 4px rgba(154, 150, 150, 0.25), inset 0px 4px 4px #f7b31c;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ---add shiping end */
 /* form-cotainer-end */

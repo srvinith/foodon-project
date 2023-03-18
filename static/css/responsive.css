@@ -144,9 +144,9 @@
         background-size: cover;
         margin-top: -16px;
     }
-    .cart-home{
+    /* .cart-home{
         display: none;
-    }
+    } */
     .under{
 
         display: block;
@@ -196,8 +196,22 @@
     .login{
         background-image: none !important;
     }
-    
-  
+    .pric-text {
+        font-weight: 400;
+        font-size: 18px !important;
+      }
+    .form-con{
+        background-image: none !important;
+    }
+    .f-inp{
+        flex-direction: column;
+    }
+    .f-one{
+        width: 100% !important;
+    }
+    .f-two{
+        width: 100% !important;
+    }
     
 
 }

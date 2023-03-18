@@ -57,12 +57,12 @@
                     <div class="icon navbar-mr">
                         <ul class="d-flex align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="/login"><img src="{% static 'images/usee.svg' %}"
-                                        alt="user" class="soc-icon"></a>
+                                <a class="nav-link" href="/login"><img src="{% static 'images/usee.svg' %}" alt="user"
+                                        class="soc-icon"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active-log" href="/cart"><img
-                                        src="{% static 'images/cart.svg' %}" alt="user" class="soc-icon"></a>
+                                <a class="nav-link active-log" href="/cart"><img src="{% static 'images/cart.svg' %}"
+                                        alt="user" class="soc-icon"></a>
                             </li>
                         </ul>
                     </div>
@@ -75,94 +75,101 @@
                 <h1 class="">My Cart</h1>
             </center>
         </div>
-        <div class="cart-page" style="display:block" id="cart-page" >
+        <div class="cart-page" id="cart-page">
             <div class="cart-list">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6">
+                        <div class=" col-sm-12 col-md-6">
                             <div class="cart-payment">
                                 <div class="cart-box">
                                     <img src="{% static 'images/new-images/cart-box-img.png' %}" alt="cart">
-                                    <span class="fs-4 fw-4"><span class="text-dark">₹</span><span style="color:#F7B31C;"> 1559</span></span>
+                                    <span class="fs-4 fw-4"><span class="text-dark">₹</span><span
+                                            style="color:#F7B31C;"> 1559</span></span>
                                     <span class="">
                                         Breakfast Plan <br>
                                         <span class="shadow-texts">Dosa ,idly & More</span>
                                     </span>
-                                    <span style="cursor: pointer;"><img src="{% static 'images/new-images/del-icon.svg' %}" alt="del"></span>
+                                    <span style="cursor: pointer;"><img
+                                            src="{% static 'images/new-images/del-icon.svg' %}" alt="del"></span>
                                 </div>
                                 <div class="cart-box">
                                     <img src="{% static 'images/new-images/cart-box-img.png' %}" alt="cart">
-                                    <span class="fs-4 fw-4"><span class="text-dark">₹</span><span style="color:#F7B31C;"> 1559</span></span>
+                                    <span class="fs-4 fw-4"><span class="text-dark">₹</span><span
+                                            style="color:#F7B31C;"> 1559</span></span>
                                     <span class="">
                                         Lunch Plan <br>
                                         <span class="shadow-texts">Dosa ,idly & More</span>
                                     </span>
-                                    <span style="cursor: pointer;"><img src="{% static 'images/new-images/del-icon.svg' %}" alt="del"></span>
+                                    <span style="cursor: pointer;"><img
+                                            src="{% static 'images/new-images/del-icon.svg' %}" alt="del"></span>
                                 </div>
                                 <div class="cart-box">
                                     <img src="{% static 'images/new-images/cart-box-img.png' %}" alt="cart">
-                                    <span class="fs-4 fw-4"><span class="text-dark">₹</span><span style="color:#F7B31C;"> 1559</span></span>
+                                    <span class="fs-4 fw-4"><span class="text-dark">₹</span><span
+                                            style="color:#F7B31C;"> 1559</span></span>
                                     <span class="">
                                         Dinner Plan <br>
                                         <span class="shadow-texts">Dosa ,idly & More</span>
                                     </span>
-                                    <span style="cursor: pointer;"><img src="{% static 'images/new-images/del-icon.svg' %}" alt="del"></span>
+                                    <span style="cursor: pointer;"><img
+                                            src="{% static 'images/new-images/del-icon.svg' %}" alt="del"></span>
                                 </div>
                                 <div class="cart-box">
                                     <img src="{% static 'images/new-images/cart-box-img.png' %}" alt="cart">
-                                    <span class="fs-4 fw-4"><span class="text-dark">₹</span><span style="color:#F7B31C;"> 1559</span></span>
+                                    <span class="fs-4 fw-4"><span class="text-dark">₹</span><span
+                                            style="color:#F7B31C;"> 1559</span></span>
                                     <span class="">
                                         Breakfast Plan <br>
                                         <span class="shadow-texts">Dosa ,idly & More</span>
                                     </span>
-                                    <span style="cursor: pointer;"><img src="{% static 'images/new-images/del-icon.svg' %}" alt="del"></span>
+                                    <span style="cursor: pointer;"><img
+                                            src="{% static 'images/new-images/del-icon.svg' %}" alt="del"></span>
                                 </div>
-
-                                <div class="checkout-btn" onclick="paymentPage()">
+                                <div class="checkout-btn my-3" onclick="paymentPage()">
                                     <span>Check out</span>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        <div class="col-2"></div>
-                        <div class="col-4">
+                        <div class="col-md-2"></div>
+                        <div class="col-sm-12 col-md-4">
                             <div class="plan-price-box">
-                               <div class="plan-frow">
-                                <img src="{% static 'images/new-images/food-diamond.png' %}" alt="food-diamond">
-                                <span class="pric-text">30 Days Food Plan</span><br>
-                                <span class="shadoww">Breakfast Lunch Dinner plan</span>
-                                <div class="tabl-sec">
-                                    <table class="table">
-                                        <tr>
-                                            <td> Name</td>
-                                            <td>Ganesh M</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Valid From </td>
-                                            <td>11.01.2023</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Valid To </td>
-                                            <td></td>
-                                        </tr>
-                                    </table>
-                                   </div>
-                                   <div class="sec-tabl">
-                                    <table class="table">
-                                        <tr class="fg-bg">
-                                            <td>Delivery Charges</td>
-                                            <td>Free delivery</td>
-                                        </tr>
-                                        <tr class="fg-bg">
-                                            <td>Amount to be paid</td>
-                                            <td class="pric-strong"> ₹ 1125</td>
-                                        </tr>
-                                    </table>
-                                   </div>
-                               </div>
-                              
+                                <div class="plan-frow">
+                                    <img src="{% static 'images/new-images/food-diamond.png' %}" alt="food-diamond">
+                                    <span class="pric-text">30 Days Food Plan</span><br>
+                                    <span class="shadoww">Breakfast Lunch Dinner plan</span>
+                                    <div class="tabl-sec">
+                                        <table class="table">
+                                            <tr>
+                                                <td> Name</td>
+                                                <td>Ganesh M</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Valid From </td>
+                                                <td>11.01.2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Valid To </td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="sec-tabl">
+                                        <table class="table">
+                                            <tr class="fg-bg">
+                                                <td>Delivery Charges</td>
+                                                <td>Free delivery</td>
+                                            </tr>
+                                            <tr class="fg-bg">
+                                                <td>Amount to be paid</td>
+                                                <td class="pric-strong"> ₹ 1125</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -170,106 +177,121 @@
         </div>
         <div class="payment-form" id="payment-form">
             <div class="form-con">
-               <div class="container">
-                <div class="row">
-                    <div class="col-8">
-                        <form action="">
-                            <div class="add-shiping me-4">
-                                <h5>Add Shipping Address </h5>
-                                <form action="" method="post">
-                                  <div class="f-inp">
-                                    <div class="f-one">
-                                      <label for="fname">First Name</label><br>
-                                      <input type="text" name="fname" id="fname" placeholder="Ganesh" class="fname">
-                                    </div>
-                                    <div class="f-two">
-                                      <label for="phone">Phone Number</label><br>
-                                      <input type="number" name="phone" id="phone" placeholder="Phone Number" class="phone">
-                                    </div>
-                                  </div>
-                                  <div class="f-inp">
-                                    <div class="f-one">
-                                      <label for="fname">Pin code</label><br>
-                                      <input type="number" name="fname" id="fname" placeholder="623456" class="fname">
-                                    </div>
-                                    <div class="f-two">
-                                      <label for="phone">City / Town</label><br>
-                                      <input type="number" name="phone" id="phone" placeholder="Pollachi" class="phone">
-                                    </div>
-                                  </div>
-                                  <div class="address">
-                                    <label for="address">Address</label><br>
-                                    <input type="text" placeholder="Address" name="address" id="address">
-                                  </div>
-                                  <div class="date">
-                                    <div class="from-date">
-                                      <div class="dates"><label for="frdate">Plan Date from</label></div>
-                                      <div><input type="date" name="frdate" id="frdate" placeholder="jan-12"></div>
-                                    </div>
-                                    <hr>
-                                    <div class="to-date">
-                                      <div class="dates"><label for="todate">Plan Date to</label></div>
-                                      <div><input type="date" name="todate" id="todate"></div>
-                                    </div>
-                                  </div>
-                                  <button class="payment mt-4" onclick="location.href='/payment'">Continue to Payment</button>
-                                </form>
-                              </div>
-                        </form>
-                       
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8">
+                            <form action="">
+                                <div class="add-shiping me-4">
+                                    <h5>Add Shipping Address </h5>
+                                    <form action="" method="post">
+                                        <div class="f-inp">
+                                            <div class="f-one">
+                                                <label for="fname">First Name</label><br>
+                                                <input type="text" name="fname" id="fname" placeholder="Ganesh"
+                                                    class="fname">
+                                            </div>
+                                            <div class="f-two">
+                                                <label for="phone">Phone Number</label><br>
+                                                <input type="number" name="phone" id="phone" placeholder="Phone Number"
+                                                    class="phone">
+                                            </div>
+                                        </div>
+                                        <div class="f-inp">
+                                            <div class="f-one">
+                                                <label for="fname">Pin code</label><br>
+                                                <input type="number" name="fname" id="fname" placeholder="623456"
+                                                    class="fname">
+                                            </div>
+                                            <div class="f-two">
+                                                <label for="phone">City / Town</label><br>
+                                                <input type="number" name="phone" id="phone" placeholder="Pollachi"
+                                                    class="phone">
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            <label for="address">Address</label><br>
+                                            <input type="text" placeholder="Address" name="address" id="address">
+                                        </div>
+                                        <div class="date">
+                                            <div class="from-date">
+                                                <div class="dates"><label for="frdate">Plan Date from</label></div>
+                                                <div><input type="date" name="frdate" id="frdate" placeholder="jan-12">
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="to-date">
+                                                <div class="dates"><label for="todate">Plan Date to</label></div>
+                                                <div><input type="date" name="todate" id="todate"></div>
+                                            </div>
+                                        </div>
+                                        <button class="payment my-4" onclick="location.href='/payment'">Continue to
+                                            Payment</button>
+                                    </form>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="col-md-4"></div>
                     </div>
-                    <div class="col-4"></div>
                 </div>
-               </div>
-            
+
             </div>
         </div>
-        <!-- mob-home start -->
-        <div class="mob-content">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><img src="{% static 'images/logofoodon.png' %}" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/menus">Menus</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/plans">Plans</a>
-                            </li>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2">
+                    <img src="{% static 'images/new-images/foodonlogos.png' %}" alt="logo" class="logo-mob">
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <div class="foot-list">
+                        <ul class="foot-link">
+                            <h6>Quick Links</h6>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/menus">Menu</a></li>
+                            <li><a href="/plans">Plans</a></li>
+                            <li><a href="/cart">Cart</a></li>
+                            <li><a href="/login">Contact Us</a></li>
+
                         </ul>
-                        <div class="icon navbar-mr">
-                            <ul class="d-flex align-items-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/login"><img
-                                            src="{% static 'images/usee.svg' %}" alt="user"
-                                            class="soc-icon"></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/cart"><img
-                                            src="{% static 'images/cart.svg' %}" alt="user"
-                                            class="soc-icon"></a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
-            </nav>
-            <div class="mob-bg"></div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="foot-list">
+                        <ul class="foot-link">
+                            <h6>Contact us</h6>
+                            <li><a href="#">Terms and conditions </a></li>
+                            <li><a href="#">Support@foodon.in</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="foot-list">
+                        <ul class="foot-link">
+                            <h6>Subscribe</h6>
+                            <li>
+                                Receive the latest offers and
+                                <br>notifications via email
+
+                            </li>
+                            <form action="" class="footer-form">
+                                <input type="text" name="" id="" placeholder="Enter Email">
+                                <button type="submit" class="btn-style mt-3">
+                                    <span>Submit</span>
+                                </button>
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-white">
+            <p class="text-white text-center">© 2023 foodon. All Rights Reserved</p>
+
         </div>
-        <!-- mob-home end -->
 
-
-
-    </div>
+    </footer>
     <!-- <div class="under">
     <div class="container">
         <div class="row">
@@ -329,15 +351,18 @@
 
         window.addEventListener("scroll", reveal);
 
-        function paymentPage(e){
+        function paymentPage(e) {
             event.preventDefault();
-         const cartPage = document.getElementById('cart-page');
-         const paymnetForm = document.getElementById('payment-form');
-            if(cartPage.style.display === 'block'){
+            const cartPage = document.getElementById('cart-page');
+            const paymnetForm = document.getElementById('payment-form');
+            if (cartPage.style.display === 'block') {
                 cartPage.style.display = 'none';
-                paymnetForm.style.display='block';
+                paymnetForm.style.display = 'block';
             }
-            
+            else{
+                cartPage.style.display='block';
+            }
+
         }
     </script>
     <!--  -->

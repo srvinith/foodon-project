@@ -202,3 +202,20 @@
     height: auto;
 
 }
+
+#desktop-menus {
+    display: block;
+  }
+  
+  #mob-menus-cart {
+    display: none !important;
+  }
+
+  @media screen and (max-width:1000px){
+    #desktop-menus{
+        display: none;
+    }
+    #mob-menus-cart{
+        display: block !important;
+    }
+  }
