@@ -139,11 +139,25 @@
         background-image: url(../images/ram.jpg);
         width: 100%;
         height: 45vh;
+        object-fit: contain;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         margin-top: -16px;
     }
+   .playstore-img{
+    width: 150px!important;
+    height: 150px;
+   }
+   .playstore{
+    width: 150px!important;
+    height: 150px !important;
+   }
+    .app-texts{
+        width: 100%;
+        font-size: 18px;
+    }
+
     /* .cart-home{
         display: none;
     } */
@@ -176,6 +190,7 @@
         margin-bottom:0px;
         position: relative;
     }
+   
     /* .banner-mob-img{
         display: none !important;
     } */
@@ -212,6 +227,8 @@
     .f-two{
         width: 100% !important;
     }
-    
+
+/* --plans page responsive */
 
 }
+

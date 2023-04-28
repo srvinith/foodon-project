@@ -168,3 +168,11 @@ right: 0;
     font-size: 33px;
     letter-spacing: 1px;
 }
+
+
+@media screen and (max-width:1000px){
+    .plans-t{
+        font-size: 10px !important;
+        color: red;
+    }
+}
