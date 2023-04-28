@@ -1,7 +1,11 @@
 @media screen and (max-width:1000px) {
     .plans-t{
-        font-size: 12px !important;
-        margin-top: 100px;
+        font-size: 30px !important;
+        
     }
+    .plans-banner h3{
+        color: #fff;
+    }
+   
    
 }

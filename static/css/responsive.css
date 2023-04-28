@@ -16,6 +16,10 @@
         height: 100%;
     }
 
+    .main-text{
+        font-size: 20px;
+    }
+
     .mob-works {
         display: block;
     }
@@ -128,12 +132,16 @@
     .main-content {
         background-image: none;
         background-size: cover;
+        margin-top: -20px;
         background-position: left;
         width: 100%;
         height: 60vh;
     }
     .sect{
-        font-size: 20px;
+        font-size: 30px;
+    }
+    .section-title{
+        font-size: 30px;
     }
     .menu-bg{
         background-image: url(../images/ram.jpg);
