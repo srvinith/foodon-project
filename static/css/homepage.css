@@ -185,8 +185,6 @@ button:focus {
     width: fit-content;
 }
 
-
-
 /* --bg page end-- */
 
 /* --how-it-works */
@@ -198,6 +196,9 @@ button:focus {
     background-size: 100px;
     background-position: left;
     margin-top: 0;
+}
+#carousel-slider{
+    display: flex;
 }
 
 .mob-works {
